@@ -1,0 +1,13 @@
+---
+Name: elementallinkifymodule
+After:
+  - '#cmsmodals'
+---
+
+SilverStripe\Admin\LeftAndMain:
+  extensions:
+    - Zazama\ElementalLinkify\Extensions\ElementalLinkifyExtension
+
+SilverStripe\Admin\ModalController:
+  extensions:
+    - Zazama\ElementalLinkify\Forms\ElementalLinkifyModal

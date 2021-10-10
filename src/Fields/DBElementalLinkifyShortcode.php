@@ -1,6 +1,6 @@
 <?php
 
-namespace Zazama\ElementalLinkify;
+namespace Zazama\ElementalLinkify\Fields;
 use SilverStripe\ORM\FieldType\DBHTMLVarchar;
 use SilverStripe\View\Parsers\ShortcodeParser;
 

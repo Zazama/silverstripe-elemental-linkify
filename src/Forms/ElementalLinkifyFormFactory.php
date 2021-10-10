@@ -1,6 +1,6 @@
 <?php
 
-namespace Zazama\ElementalLinkify;
+namespace Zazama\ElementalLinkify\Forms;
 
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\DropdownField;

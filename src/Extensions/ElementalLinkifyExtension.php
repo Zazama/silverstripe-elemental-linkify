@@ -1,6 +1,6 @@
 <?php
 
-namespace Zazama\ElementalLinkify;
+namespace Zazama\ElementalLinkify\Extensions;
 
 use Silverstripe\Core\Extension;
 use SilverStripe\View\Requirements;

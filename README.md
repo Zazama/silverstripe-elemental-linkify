@@ -54,3 +54,5 @@ class Teaser extends DataObject {
     }
 }
 ```
+
+![Dropdown](https://zazama.de/assets/Uploads/elementallinkfield.png?vid=3)

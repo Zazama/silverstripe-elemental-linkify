@@ -24,10 +24,8 @@ const config = [
       'TinyMCE_sslink-elemental': `${PATHS.LEGACY_SRC}/TinyMCE_sslink-elemental.js`,
     },
     output: {
-      path: PATHS.DIST,
-      filename: 'js/[name].js',
+      path: Path.join(PATHS.DIST, 'js')
     },
-    devtool: (ENV !== 'production') ? 'source-map' : '',
     resolve: resolveJS(ENV, PATHS),
     externals: externalJS(ENV, PATHS),
     module: moduleJS(ENV, PATHS),

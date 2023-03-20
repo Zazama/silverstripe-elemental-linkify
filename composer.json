@@ -1,6 +1,6 @@
 {
     "name": "zazama/silverstripe-elemental-linkify",
-    "description": "A Silverstripe 4 module to create links to elemental elements.",
+    "description": "A Silverstripe module to create links to elemental elements.",
     "type": "silverstripe-vendormodule",
     "keywords": [
         "silverstripe",
@@ -10,7 +10,8 @@
     ],
     "license": "BSD-3-Clause",
     "require": {
-        "silverstripe/cms": "^4.0"
+        "silverstripe/cms": "^5",
+        "silverstripe/vendor-plugin": "^2"
     },
     "autoload": {
         "psr-4": {
@@ -18,9 +19,9 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
-        }
+        "expose": [
+            "client/dist/js"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true

@@ -2,12 +2,13 @@
 
 namespace Zazama\ElementalLinkify;
 
-use SilverStripe\View\Parsers\ShortcodeParser;
-use SilverStripe\Forms\HTMLEditor\HtmlEditorConfig;
 use SilverStripe\Core\Manifest\ModuleLoader;
+use SilverStripe\Forms\HTMLEditor\TinyMCEConfig;
+use SilverStripe\View\Parsers\ShortcodeParser;
 
-HtmlEditorConfig::get('cms')->enablePlugins([
-    'sslinkelemental' => ModuleLoader::getModule('silverstripe-elemental-linkify')->getResource('client/dist/js/TinyMCE_sslink-elemental.js')->getRelativePath()
+$module = ModuleLoader::inst()->getManifest()->getModule('zazama/silverstripe-elemental-linkify');
+TinyMCEConfig::get('cms')->enablePlugins([
+    'sslinkelemental' => $module->getResource('client/dist/js/TinyMCE_sslink-elemental.js')
 ]);
 
 ShortcodeParser::get('default')->register('elemental_link', [ElementalLinkifyShortcodeParser::class, 'parse']);

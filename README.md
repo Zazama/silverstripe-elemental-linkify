@@ -10,9 +10,7 @@ It also ships with a DBField that inserts a DropdownField into the CMS allowing 
 
 ## Requirements
 
-* silverstripe/cms ^4.0
-
-This module was only tested on the newest 4.9.0
+* silverstripe/cms ^5
 
 ## Installation
 

@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client';
 import jQuery from 'jquery';
 import { createInsertLinkModal } from 'containers/InsertLinkModal/InsertLinkModal';
 import { loadComponent } from 'lib/Injector';
+import ShortcodeSerialiser from 'lib/ShortcodeSerialiser';
 
 const commandName = 'sslinkelemental';
 

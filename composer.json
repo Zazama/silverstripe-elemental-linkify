@@ -10,12 +10,18 @@
     ],
     "license": "BSD-3-Clause",
     "require": {
-        "silverstripe/cms": "^5"
+        "silverstripe/cms": "^5",
+        "silverstripe/vendor-plugin": "^2"
     },
     "autoload": {
         "psr-4": {
             "Zazama\\ElementalLinkify\\": "src/"
         }
+    },
+    "extra": {
+        "expose": [
+            "client/dist/js"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true

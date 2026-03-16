@@ -34,7 +34,7 @@ const plugin = {
 
 const modalId = 'insert-link__dialog-wrapper--elemental';
 const sectionConfigKey = 'SilverStripe\\CMS\\Controllers\\CMSPageEditController';
-const formName = 'editorElementalLink';
+const formName = 'EditorElementalLink';
 const InsertLinkElementalModal = loadComponent(createInsertLinkModal(sectionConfigKey, formName));
 
 jQuery.entwine('ss', ($) => {

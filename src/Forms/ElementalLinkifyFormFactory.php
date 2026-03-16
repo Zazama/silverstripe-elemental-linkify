@@ -6,9 +6,9 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\TextField;
-use SilverStripe\Forms\RequiredFields;
 use SilverStripe\Admin\Forms\LinkFormFactory;
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Forms\Validation\RequiredFieldsValidator;
 
 class ElementalLinkifyFormFactory extends LinkFormFactory
 {
@@ -38,7 +38,7 @@ class ElementalLinkifyFormFactory extends LinkFormFactory
     protected function getValidator($controller, $name, $context)
     {
         if ($context['RequireLinkText']) {
-            return RequiredFields::create('ElementID');
+            return RequiredFieldsValidator::create('ElementID');
         }
         return null;
     }

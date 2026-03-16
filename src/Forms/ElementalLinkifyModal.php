@@ -3,8 +3,6 @@
 namespace Zazama\ElementalLinkify\Forms;
 
 use Silverstripe\Core\Extension;
-use SilverStripe\View\Requirements;
-use Zazama\Phonify\EditorPhoneLinkFormFactory;
 
 class ElementalLinkifyModal extends Extension
 {

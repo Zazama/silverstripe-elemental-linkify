@@ -3,7 +3,7 @@
 namespace Zazama\ElementalLinkify;
 
 use SilverStripe\Core\Manifest\ModuleLoader;
-use SilverStripe\Forms\HTMLEditor\TinyMCEConfig;
+use SilverStripe\TinyMCE\TinyMCEConfig;
 use SilverStripe\View\Parsers\ShortcodeParser;
 
 $module = ModuleLoader::inst()->getManifest()->getModule('zazama/silverstripe-elemental-linkify');

@@ -1,7 +1,7 @@
 {
   "name": "silverstripe-elemental-linkify",
   "engines": {
-    "node": ">=16"
+    "node": ">=18.x"
   },
   "scripts": {
     "build": "yarn && NODE_ENV=production webpack --mode production --bail --progress",
@@ -13,8 +13,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@silverstripe/webpack-config": "2.0.0-alpha2",
-    "webpack-cli": "^5.0.1"
+    "@silverstripe/webpack-config": "^3",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.0"
   },
   "babel": {
     "presets": [
